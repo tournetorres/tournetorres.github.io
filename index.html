@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tourne's Website</title>
+                <style>
+            body {
+                background: rgb(180, 111, 110);
+                color: rgb(50, 20, 100);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            [id=all-contents] {
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(180, 178, 110);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(143, 100, 45);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            [class=sidebar] {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            [class=sidebar] img {
+                width: 200px;
+            }
+            [class=content] {
+                flex: 1;
+                padding: 15px;
+            }
+            [class=interests] header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+
+    <body>
+             <div id="all-contents"> 
+            <nav>
+                 <h1>Tourne's Stupendous Website</h1>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+                
+            </nav>
+
+            <main>
+                    <div class="sidebar">
+                        <img style="border:15px solid brown" src="https://i.kinja-img.com/gawker-media/image/upload/s--xq2gAEZ4--/c_scale,fl_progressive,q_80,w_800/190copifljal2jpg.jpg" />
+                </div>
+
+                <div class="content">
+                    <h2>Tourne Torres</h2>
+                    <p>Digital Coordinator at The Marketing Center</p>
+                     <section class="interests">
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>Knitting</li>
+                            <li>Writing Music</li>
+                            <li>Graphic Design</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
