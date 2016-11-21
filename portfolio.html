@@ -2,10 +2,10 @@
 <html>
     <head>
         <title>Tourné's Stupendous Website</title>
-            <style type="text/css">
-
+       
+            <style>
             body {
-                background: ffffff;
+                background: #aaaaaa;
                 color: rgb(50, 20, 100);
                 padding: 10px;
                 font-family: arial;
@@ -20,28 +20,33 @@
             }
 
             /* navigation menu */
+            
+            
             nav {
-                background: rgb(180, 178, 110);
-                    margin-bottom: 20px;
-    display: flex;
-    padding: 10px;
-    border-radius: 10px;
-    float: right;
-    width: 870px;
-    margin-left: 27px;
-    height: 45px;
-}
+                background: rgb(1, 60, 90);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 10px;
+               
+            }
+            
+            nav img {
+                width:170px;
+                height:100px;
+                float:left;
+                display:flex;
+            }
             
             nav header {
                 display: flex;
                 align-items: center;
-                   color: rgb(245, 238, 219);
-    flex: 1;
-    font-family: futura;
-    font-size: 40px;
-    text-shadow: 1px 1px 10px black;
-}
-            
+                color: rgb(245, 238, 219);
+                flex: 1;
+                margin-left: 20px;
+                font-size:26px;
+            }
             nav ul {
                 list-style-image: none;
             }
@@ -51,35 +56,17 @@
             }
             nav a {
                 text-decoration: none;
-               color: #a52a2a;
-    font-family: futura;
-    margin-right: 20px;
-    font-size: 18px;
-    
-    
-            /* portfolio styles */
-            #portfolio {
-                list-style-type: none;
-                padding-left: 0;
-            }
-
-            #portfolio li {
-                background: #fff;
-                padding: 10px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-            }
-
-            #portfolio li:hover {
-                background: #eee;
-            } 
-
-            #portfolio a {
-                text-decoration: none;
-                color: #454545;
+                color: rgb(245, 238, 219);
+                margin-right:6px;
+                font-weight:bold;
+                
+                
             }
             
-}
+            nav ul {
+                margin-top:43px;
+            }
+
             /* main container area beneath menu */
             main {
                 background: rgb(245, 238, 219);
@@ -91,30 +78,27 @@
             }
             [class=sidebar] img {
                 width: 200px;
+                margin-right:20px;
             }
             [class=content] {
                 flex: 1;
                 padding: 15px;
+                text-shadow:2px 2px 3px gray;
             }
-            [class=interests] header {
-                font-size: 1.25em;
-            }
+           
             
-            [class=content] h1 {
-                font-family: futura;
-                color: #a52a2a;
-                    padding-bottom: 200px;
-            }
         </style>
     </head>
 
     <body>
-
-            <main>
-                    <div class="sidebar">
-                        <img style="box-shadow: 6px 6px 8px grey;" src="https://i.kinja-img.com/gawker-media/image/upload/s--xq2gAEZ4--/c_scale,fl_progressive,q_80,w_800/190copifljal2jpg.jpg" />
+<div id="all-contents"> 
+            
+                    
+                        
            <nav>
+               <img src="https://i.kinja-img.com/gawker-media/image/upload/s--xq2gAEZ4--/c_scale,fl_progressive,q_80,w_800/190copifljal2jpg.jpg" />
             <header>Tourné's Stupendous Website</header>
+            
             <ul>
                 <li><a href="index.html">Home</a>
                 </li>
@@ -122,15 +106,20 @@
                 </li>
             </ul>
         </nav>
+        
+        <main>
+            <div class="sidebar">
+                
             <div class="content">
                 <h1>Portfolio</h1>
                 <ul id="portfolio">
                 </ul>
+                </div>
             </div>
         </main>
         
         
-        
+        </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
     </body>
