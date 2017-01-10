@@ -3,8 +3,8 @@
     <head>
     
                 <style>
-            body {
-                background: rgb(180, 111, 110);
+          body {
+                background: #aaaaaa;
                 color: rgb(50, 20, 100);
                 padding: 10px;
                 font-family: arial;
@@ -19,19 +19,38 @@
             }
 
             /* navigation menu */
+            
+            
             nav {
-                background: rgb(180, 178, 110);
+                background: rgb(1, 60, 90);
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
                 padding: 10px;
                 border-radius: 10px;
+               
             }
+            
+            nav img {
+                width:170px;
+                height:100px;
+                float:left;
+                display:flex;
+            }
+            
             nav header {
                 display: flex;
                 align-items: center;
-                color: rgb(143, 100, 45);
+                color: rgb(245, 238, 219);
                 flex: 1;
+                margin-left: 20px;
+                font-size:26px;
+                
+            }
+            
+            nav:hover
+            {        
+                box-shadow: inset 0 0 0 10px rgb(1, 92, 138);
             }
             nav ul {
                 list-style-image: none;
@@ -42,13 +61,22 @@
             }
             nav a {
                 text-decoration: none;
-                color: #fff;
+                color: rgb(245, 238, 219);
+                margin-right:6px;
+                font-weight:bold;
+                
+                
+            }
+            
+            nav ul {
+                margin-top:43px;
             }
 
             /* main container area beneath menu */
             main {
                 background: rgb(245, 238, 219);
                 display: flex;
+                border-radius: 10px;
             }
             [class=sidebar] {
                 margin-right: 25px;
@@ -56,35 +84,46 @@
             }
             [class=sidebar] img {
                 width: 200px;
+                margin-right:20px;
             }
             [class=content] {
                 flex: 1;
                 padding: 15px;
+                /*text-shadow:2px 2px 3px gray;*/
             }
-            [class=interests] header {
-                font-size: 1.25em;
-            }
+           section {
+                max-width: 770px;
+           }
+           main:hover {
+               box-shadow: inset 0 0 0 10px rgb(1, 92, 138);
+           }
+        
         </style>
     </head>
 
     <body>
              <div id="all-contents"> 
-            <nav>
-                 <h1>Tourne's Stupendous Website</h1>
-                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                </ul>
-                
-            </nav>
+   <nav>
+               <img src="https://i.kinja-img.com/gawker-media/image/upload/s--xq2gAEZ4--/c_scale,fl_progressive,q_80,w_800/190copifljal2jpg.jpg" />
+            <header>Tourné's Stupendous Website</header>
+            
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="studies.html">Studies</a>
+                </li>
+            </ul>
+        </nav>
 
             <main>
                     <div class="sidebar">
-                        <img style="border:15px solid brown" src="https://i.kinja-img.com/gawker-media/image/upload/s--xq2gAEZ4--/c_scale,fl_progressive,q_80,w_800/190copifljal2jpg.jpg" />
+                        <img style="border:10px solid rgb(1, 60, 90);" src="https://media2.wnyc.org/i/620/372/c/80/1/piano-composer-bach.jpg" />
                 </div>
 
                 <div class="content">
-                    <h2>Tourne Torres</h2>
+                    <h2>Tourné Torres</h2>
                     <p>Digital Coordinator at The Marketing Center</p>
                      <section class="interests">
                         <h3>Interests</h3>

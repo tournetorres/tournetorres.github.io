@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="bower_components/lodash/lodash.min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/products.css" type="text/css" />
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+        <script type="text/javascript" src="js/lib/spin.min.js"></script>
+        <script type="text/javascript" src="js/view/pacifier.js"></script>
+        <script type="text/javascript" src="js/products.js"></script>
+        <title>Product Project</title>
+    </head>
+    <body>
+        <div id="container" class="container">
+            <nav>
+                <h1>Product Project</h1>
+                <form action="" id="search-form">
+                    <fieldset>
+                        <input type="text" id="search" name="search" />
+                        <button type="button" id="search-submit" class="btn btn-search">SEARCH</button>
+                    </fieldset>
+                </form>
+                <div class="dropdown">
+                      
+                        <button type="button" class="btn-dd" data-toggle="dropdown">CHOOSE TYPE</button>
+                        <span class="caret"></span>
+                        </button>
+                            <ul class="dropdown-menu">
+                                
+                            </ul>
+                      
+                </div>
+            </nav>
+            <main>
+            </main>
+<!-- Modal -->
+    <div class="modal fade" id="model" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&nbsp;</span>
+                     </button>
+                </div>
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+            
+        </div>
+        <script>
+            $(function () {
+                window.opspark.notes.hide();
+            });
+        </script>
+    </body>
+</html>

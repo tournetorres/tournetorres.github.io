@@ -1,0 +1,9 @@
+let searchFilter = function(string) {
+    return _.filter (products, function(obj) {
+        find(obj, string); 
+    }
+}).map(function(val) {
+    return createProductListItems(val);
+    };
+    
+        

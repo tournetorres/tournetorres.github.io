@@ -79,15 +79,19 @@ function remove(animalName) {
       
 }
 
-function create(object) {
-  for(var i = 0; i < animals.length; i++) {
-  if (object.name.length > 0 && object.species.length > 0 && object.name !== animals[i].name) {
-    console.log(animals.push(object));
-    return animals;
+
+function create(object){
+    if (!object.name.length > 0) {
+      return alert("No Name");
     }
-  }
+    if (!object.species.length > 0) {
+      return alert("No Species");
+    }  
+    for (var i = 0; i < animals.length; i++) {
+        if (object.name === animals[i].name) {
+          return alert("Duplicate!");
+        }
+    }    
+    animals.push(object);
 }
-
-
-
 
