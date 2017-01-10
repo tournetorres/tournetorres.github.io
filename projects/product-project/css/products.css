@@ -11,6 +11,7 @@
     border: 1px solid;
     border-color: rgba(208, 207, 207, 1);
     border-radius: 4px;
+        background-color: white;
 }
 
 .li-product-image {
@@ -19,6 +20,10 @@
 
 .details-product-image {
     
+}
+
+body {
+    background-color: #78bbe1;
 }
 
 nav {
